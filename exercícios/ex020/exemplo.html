@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Página de Exemplo com Hover</title>
+  <style>
+    /* Estilo geral para o corpo da página */
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #e0f7fa; /* Fundo colorido */
+      padding: 20px;
+    }
+
+    /* Estilo das divs para agrupamento de parágrafos */
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #ffffff; /* Cor de fundo da área de conteúdo */
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Estilo dos parágrafos */
+    p {
+      font-size: 18px;
+      margin-bottom: 15px;
+      padding: 10px;
+      border-radius: 4px;
+      transition: background-color 0.3s ease; /* Transição suave para a cor de fundo */
+    }
+
+    /* Seletores para parágrafos com cores diferentes */
+    p.vermelho {
+      background-color: #ffcccc; /* Vermelho claro */
+    }
+
+    p.azul {
+      background-color: #cce7ff; /* Azul claro */
+    }
+
+    p.verde {
+      background-color: #d9f7d9; /* Verde claro */
+    }
+
+    p.amarelo {
+      background-color: #ffffcc; /* Amarelo claro */
+    }
+
+    /* Hover - alterando a cor de fundo dos parágrafos */
+    p:hover {
+      background-color: #b2ebf2; /* Cor de fundo quando o mouse passa por cima */
+    }
+
+    p.vermelho .amarelo .azul .verde:hover {
+        background-color: #b2ebf2;
+    }
+    /* Estilo para cabeçalho */
+    h1 {
+      text-align: center;
+      color: #00796b;
+      font-size: 36px;
+      margin-bottom: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>Exemplo de Página com Parágrafos Coloridos e Hover</h1>
+
+    <!-- Parágrafos com cores diferentes -->
+    <p class="vermelho">Este é um parágrafo com fundo vermelho claro. Passe o mouse sobre ele!</p>
+    <p class="azul">Este é um parágrafo com fundo azul claro. Passe o mouse sobre ele!</p>
+    <p class="verde">Este é um parágrafo com fundo verde claro. Passe o mouse sobre ele!</p>
+    <p class="amarelo">Este é um parágrafo com fundo amarelo claro. Passe o mouse sobre ele!</p>
+  </div>
+
+</body>
+</html>
